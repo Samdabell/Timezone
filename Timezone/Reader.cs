@@ -13,7 +13,8 @@ namespace Timezone
         {
             List<Tuple<string, string>> lReturn = new List<Tuple<string, string>>();
 
-            string[] fileParts = File.ReadAllText("Timezone.txt").Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string[] fileParts = File.ReadAllText("../../Timezone.txt").Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            //changed file path to find original file
 
             foreach (string part in fileParts)
             {
